@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/card_bg">
+
+        <ImageButton
+            android:id="@+id/btnBackPdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:tint="@color/app_text_primary" />
+
+        <TextView
+            android:id="@+id/tvPdfTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            android:textColor="@color/app_text_primary"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnPrevPdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_left"
+            android:background="@android:color/transparent"
+            android:tint="@color/app_text_primary" />
+
+        <ImageButton
+            android:id="@+id/btnNextPdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_right"
+            android:background="@android:color/transparent"
+            android:tint="@color/app_text_primary" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressPdf"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/pdfImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+</FrameLayout>

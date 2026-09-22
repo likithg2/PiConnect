@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/connectionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checking Pi..."
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/dark_slate_gray"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECEIVE DOCUMENT"
+            android:textAlignment="center"
+            android:textColor="@color/dark_slate_gray"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:background="@color/light_goldenrod_yellow"
+            android:padding="14dp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:id="@+id/receivedFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting..."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/receiveBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Receive"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/sea_green"
+            android:layout_marginBottom="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/configureWifiBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Configure Wi-Fi"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/light_blue"
+            android:layout_marginBottom="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/chartreuse" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Files"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_text_primary"
+        android:paddingVertical="12dp" />
+
+    <!-- SEARCH + SORT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Search files..."
+            android:background="@color/card_bg"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/app_text_primary"
+            android:textColorHint="@color/app_text_secondary" />
+
+        <ImageButton
+            android:id="@+id/sortBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_sort"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="6dp" />
+
+
+    </LinearLayout>
+
+    <!-- GLOBAL DOWNLOAD PROGRESS -->
+    <ProgressBar
+        android:id="@+id/globalProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone" />
+
+    <!-- PATH -->
+    <TextView
+        android:id="@+id/pathText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/app_text_secondary"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- FILE LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fileList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

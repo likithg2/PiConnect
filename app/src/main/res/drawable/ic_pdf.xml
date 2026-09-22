@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Document background -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M6,2h9l5,5v13a2,2 0 0,1 -2,2H6a2,2 0 0,1 -2,-2V4a2,2 0 0,1 2,-2z" />
+
+    <!-- File folded corner -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M14,3.5L18.5,8H14V3.5z" />
+
+    <!-- Text bar line 1 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,14h2.5a1.5,1.5 0 0,0 0,-3H7v3z" />
+
+    <!-- Text bar line 1 small piece -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,12h2a0.5,0.5 0 0,1 0,1H7v-1z" />
+
+    <!-- Text bar line 2 -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M11,11v6h1.5a2.5,2.5 0 0,0 0,-5H11z" />
+
+    <!-- Text bar line 2 small piece -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M12.5,12.5a1,1 0 0,1 0,2H12v-2h0.5z" />
+
+    <!-- Right-side text block -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M16,11v6h1.5v-2h1v-1h-1v-1h1v-1h-2.5z" />
+
+</vector>
