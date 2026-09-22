@@ -1,8 +1,7 @@
 <div align="center">
 
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" alt="App Icon" width="100"/>
 
-# 📱 FileTransferApp
+# 📱 PiConnect App
 
 ### A feature-rich Android app to wirelessly transfer files, browse the filesystem, and control a Raspberry Pi from your phone.
 
