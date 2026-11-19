@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration.
+    Cleartext (HTTP) traffic is disabled by default for all destinations.
+    Local private-network IP ranges are permitted cleartext because
+    PiConnect transfers files over a local Wi-Fi hotspot / LAN connection.
+
+    Private ranges covered:
+      10.0.0.0/8      – Class A private (Android hotspot typically 192.168.49.x)
+      172.16.0.0/12   – Class B private
+      192.168.0.0/16  – Class C private (most home/office routers)
+
+    See https://developer.android.com/training/articles/security-config
+-->
+<network-security-config>
+
+    <!-- Global policy: no cleartext to public internet -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Allow cleartext only on local/private network ranges used for file transfer -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Android Wi-Fi Direct / hotspot subnet -->
+        <domain includeSubdomains="false">192.168.49.1</domain>
+        <!-- Broad private-range hostnames if the app resolves by name -->
+        <!-- Add specific host IPs here if the transfer target is always fixed -->
+    </domain-config>
+
+</network-security-config>
